@@ -1,2 +1,2 @@
 include README.md
-recursive-include lib *.py *.tar.gz
+recursive-include aws_lambda_python_lib *.py *.tar.gz

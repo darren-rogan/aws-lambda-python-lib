@@ -4,6 +4,8 @@ import sys
 
 from setuptools import setup
 
+from aws_lambda_python_lib import __version__
+
 # Set external files
 try:
     from pypandoc import convert
@@ -16,14 +18,13 @@ os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
     name='aws_lambda_python_lib',
-    version='0.0.1',
+    version=__version__,
     packages=['aws_lambda_python_lib'],
     include_package_data=True,
     license='MIT License',
     description='AWS Lambda Pre-compiled Python Library',
     long_description=README,
     url='https://github.com/liangrog/aws-lambda-python-lib',
-    download_url='https://github.com/liangrog/aws-lambda-python-lib/tarball/0.0.1',
     author='Roger Liang',
     author_email='pinguroger@gmail.com',
     classifiers=[

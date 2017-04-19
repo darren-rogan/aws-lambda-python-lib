@@ -1,5 +1,7 @@
 import os
 
+__version__ = '0.0.3'
+
 # A manifest of the included packages.
 aws_lambda_python_lib = {
     'pdfkit': {
